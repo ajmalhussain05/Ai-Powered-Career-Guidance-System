@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Grow Quest: AI-Powered Career Guidance
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Grow Quest is a web app that gives students personalized career suggestions based on their profile inputs, using the Google Gemini API.
 
-## Available Scripts
+**Live demo:** [add your Vercel link]
 
-In the project directory, you can run:
+## Problem
 
-### `npm start`
+Many students are unsure which career path fits their skills and interests. This app turns a few profile inputs into clear career suggestions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How It Works
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. The user enters their details: [for example, skills, interests, education].
+2. The app sends the profile to the Gemini API (`gemini.js`).
+3. The response is shown as [career recommendations / career-path suggestions].
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Personalized career recommendations from user input
+- [Add a feature, for example career-path suggestions]
+- [Add a feature, for example responsive dashboard]
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- Tailwind CSS
+- Google Gemini API
+- Deployed on Vercel
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Home page](screenshots/home.png)
+![Dashboard](screenshots/dashboard.png)
 
-### `npm run eject`
+## Run Locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+       git clone https://github.com/ajmalhussain05/Ai-Powered-Career-Guidance-System.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+       npm install
 
-## Learn More
+3. Create a `.env` file (copy `.env.example`) and add your key:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+       GEMINI_API_KEY=your_key_here
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Start the app:
 
-### Code Splitting
+       npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Limitations and Next Steps
 
-### Analyzing the Bundle Size
+- [For example: recommendations depend on the quality of user input]
+- [For example: no evaluation of recommendation quality yet]
+- [For example: plan to add a trained ML model and compare it against the Gemini-based approach]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Author
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ajmal Hussain, [GitHub](https://github.com/ajmalhussain05) · [LinkedIn](https://linkedin.com/in/ajmalhussain004)
