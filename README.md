@@ -1,36 +1,21 @@
 # Grow Quest: AI-Powered Career Guidance
 
-Grow Quest is a web app that gives students personalized career suggestions based on their profile inputs, using the Google Gemini API.
-
-**Live demo:** [add your Vercel link]
-
-## Problem
-
-Many students are unsure which career path fits their skills and interests. This app turns a few profile inputs into clear career suggestions.
-
-## How It Works
-
-1. The user enters their details: [for example, skills, interests, education].
-2. The app sends the profile to the Gemini API (`gemini.js`).
-3. The response is shown as [career recommendations / career-path suggestions].
+Grow Quest is an AI-powered career guidance web app that gives students personalized career recommendations and career-path suggestions based on their profile inputs.
 
 ## Features
 
-- Personalized career recommendations from user input
-- [Add a feature, for example career-path suggestions]
-- [Add a feature, for example responsive dashboard]
+- Personalized career recommendations from user profile inputs
+- Career-path suggestions
+- ANN, CNN, and KNN recommendation engine
+- AI responses powered by the Google Gemini API
 
 ## Tech Stack
 
-- React
-- Tailwind CSS
-- Google Gemini API
-- Deployed on Vercel
-
-## Screenshots
-
-![Home page](screenshots/home.png)
-![Dashboard](screenshots/dashboard.png)
+- Frontend: React, Tailwind CSS
+- Backend: Flask
+- Machine Learning / Deep Learning: ANN, CNN, KNN
+- AI: Google Gemini API
+- Deployment: Vercel
 
 ## Run Locally
 
@@ -42,20 +27,15 @@ Many students are unsure which career path fits their skills and interests. This
 
        npm install
 
-3. Create a `.env` file (copy `.env.example`) and add your key:
-
-       GEMINI_API_KEY=your_key_here
+3. Create a `.env` file in the project root and add your own Google Gemini API key. The variable name is the one read in `gemini.js`.
 
 4. Start the app:
 
        npm start
 
-## Limitations and Next Steps
-
-- [For example: recommendations depend on the quality of user input]
-- [For example: no evaluation of recommendation quality yet]
-- [For example: plan to add a trained ML model and compare it against the Gemini-based approach]
+The app runs at http://localhost:3000.
 
 ## Author
 
-Ajmal Hussain, [GitHub](https://github.com/ajmalhussain05) · [LinkedIn](https://linkedin.com/in/ajmalhussain004)
+Ajmal Hussain
+[GitHub](https://github.com/ajmalhussain05) | [LinkedIn](https://linkedin.com/in/ajmalhussain004)
